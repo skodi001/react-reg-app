@@ -17,6 +17,7 @@ function App() {
   const getAllUsers = () => {
     axios
       .get("https://reactreg2022.herokuapp.com/api/user/getAllUsers")
+
       .then((res) => {
         setUsers(res.data);
         const isCurrentUserExist = currentUser
